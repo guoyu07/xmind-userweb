@@ -108,6 +108,20 @@ class Authentication
             throw new \Exception($exc->getMessage());
         }
     }
+    
+    public function getUserID($userData)
+    {
+        $sql = "SELECT `userID` FROM `info_user` WHERE `gid` = :gid AND `gaccount` = :gaccount";
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':gid', $userData->id, \PDO::PARAM_STR);
+        $stmt->bindParam(':gaccount', $userData->email, \PDO::PARAM_STR);
+        if ($stmt->execute() && $stmt->rowCount() > 0) {
+            $rs = $stmt->fetch(\PDO::FETCH_ASSOC);
+            return $rs['userID'] ;
+        } else {
+            return false;
+        }
+    }
 
     public function __destruct()
     {

@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 12, 2015, 2:49:56 PM
+    Author     : jeffy
+*/
+
+.xmind-layout-transparent {
+    background: url('../imgs/mobile-desk.jpg') center / cover;
+}
+.xmind-layout-transparent .mdl-layout__header,
+.xmind-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+}
+.xmind-login {
+    width: 90%;
+    height: 90%;
+    /*border: 1px solid #FF6600;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+.xmind-login:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle ;
+    height: 100%;
+}
+
+.wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 320px;
+}
+
+.xmind-card-square.mdl-card {
+    width: 320px;
+}
+.xmind-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('../imgs/xmind-weblogo.png') center top -20px no-repeat #03c0c6;
+    height: 150px;
+}
+.mdl-button--google {
+    color: #dd4b39;
+}
+.circle-image{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.circle-image-small{
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.xmind-drawer .mdl-layout-title {
+    position: relative;
+    background: #03c0c6;
+    height: 160px;
+}
+
+.xmind-drawer .xmind-logo-image {
+    position: absolute;
+    bottom: 16px;
+    width: 100px;
+    height: 100px;
+}
+
+.mdl-layout__header .xmind-logo-image {
+    width: 60px;
+    height: 60px;
+}
+
+.xmind-content__posts {
+  max-width: 900px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.user-upload-log > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../imgs/blackboard.jpg') center / cover;
+}
+
+.xmind-full-width {
+    width: 100%;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: white;
+}

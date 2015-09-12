@@ -61,86 +61,23 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <meta name="author" content="ninithday">
+        <meta name="author" content="Ninthday (jeffy@ninthday.info)">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Xmind Userlog Web</title>
+        <title><?php _WEB_NAME ?></title>
         <!--        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.cyan-pink.min.css" /> 
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
-        <style>
-            .xmind-layout-transparent {
-                background: url('imgs/mobile-desk.jpg') center / cover;
-            }
-            .xmind-layout-transparent .mdl-layout__header,
-            .xmind-layout-transparent .mdl-layout__drawer-button {
-                /* This background is dark, so we set text to white. Use 87% black instead if
-                   your background is light. */
-                color: white;
-            }
-            .xmind-login {
-                width: 90%;
-                height: 90%;
-                /*border: 1px solid #FF6600;*/
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            .xmind-login:before {
-                content: '';
-                display: inline-block;
-                vertical-align: middle ;
-                height: 100%;
-            }
-
-            .wrapper {
-                display: inline-block;
-                vertical-align: middle;
-                width: 320px;
-            }
-
-            .xmind-card-square.mdl-card {
-                width: 320px;
-            }
-            .xmind-card-square > .mdl-card__title {
-                color: #fff;
-                background: url('imgs/xmind-weblogo.png') center top -20px no-repeat #03c0c6;
-                height: 150px;
-            }
-            .mdl-button--google {
-                color: #dd4b39;
-            }
-            .circle-image{
-                width: 100px;
-                height: 100px;
-                -webkit-border-radius: 50%;
-                border-radius: 50%;
-                margin: 10px auto;
-            }
-            .circle-image-small{
-                width: 70px;
-                height: 70px;
-                -webkit-border-radius: 50%;
-                border-radius: 50%;
-                margin: 10px auto;
-            }
-
-            .mdl-textfield__input > .is-focused {
-                border-bottom-color: #03c0c6;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style/xmind.css">
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
         <!-- Accent-colored raised button with ripple -->
         <div class="xmind-layout-transparent mdl-layout mdl-js-layout">
             <header class="mdl-layout__header mdl-layout__header--transparent">
                 <div class="mdl-layout__header-row">
                     <!-- Title -->
-                    <span class="mdl-layout-title">XMind</span>
+                    <span class="mdl-layout-title"><?php _WEB_NAME ?></span>
                     <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer"></div>
                     <!-- Navigation -->
@@ -188,8 +125,8 @@ and open the template in the editor.
                                             if (isset($strMesg)) {
                                                 echo '<strong>' . $strMesg . '</strong><br>';
                                             }
-                                            ?>
-                                            <?php echo $userData->email; ?>
+                                            
+                                            echo $userData->email; ?>
                                         </p>
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
