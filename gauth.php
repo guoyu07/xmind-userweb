@@ -64,7 +64,8 @@ and open the template in the editor.
         <meta name="author" content="ninithday">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Xmind Userlog Web</title>
-        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+        <!--        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.cyan-pink.min.css" /> 
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
@@ -124,6 +125,10 @@ and open the template in the editor.
                 border-radius: 50%;
                 margin: 10px auto;
             }
+
+            .mdl-textfield__input > .is-focused {
+                border-bottom-color: #03c0c6;
+            }
         </style>
     </head>
     <body>
@@ -172,25 +177,54 @@ and open the template in the editor.
                                 </div>
                                 <?php
                             } else {
-                                ?>
-                                <div class="mdl-card__supporting-text">
-                                    <h5>XMind User Sign-in</h5>
-                                    <img class="circle-image" src="<?php echo $userData->picture; ?>" />
-                                    <p style="text-align: left;">Welcome <a href="<?php echo $userData->link; ?>" /><?php echo $userData->name; ?></a> !<br>
-                                        <?php
-                                    if (isset($strMesg)) {
-                                        echo '<strong>' . $strMesg . '</strong><br>';
-                                    }
+                                $check_profile = $objUserAuth->isDoneProfile($userData);
+                                if ($check_profile) {
                                     ?>
-                                    <?php echo $userData->email; ?>
-                                    </p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--google mdl-js-button mdl-js-ripple-effect" href="?logout">
-                                        <i class="material-icons">exit_to_app</i> Logout!
-                                    </a>
-                                </div>
-                            <?php } ?>
+                                    <div class="mdl-card__supporting-text">
+                                        <h5>XMind: Not Active!</h5>
+                                        <img class="circle-image" src="<?php echo $userData->picture; ?>" />
+                                        <p style="text-align: left;">Welcome <a href="<?php echo $userData->link; ?>" /><?php echo $userData->name; ?></a> !<br>
+                                            <?php
+                                            if (isset($strMesg)) {
+                                                echo '<strong>' . $strMesg . '</strong><br>';
+                                            }
+                                            ?>
+                                            <?php echo $userData->email; ?>
+                                        </p>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--google mdl-js-button mdl-js-ripple-effect" href="?logout">
+                                            <i class="material-icons">exit_to_app</i> Logout!
+                                        </a>
+                                    </div>
+                                <?php } else { ?>
+                                    <form action="saveProfile.php" method="post">
+                                        <div class="mdl-card__supporting-text">
+                                            <h5>XMind: Your profile!</h5>
+                                            <img class="circle-image" src="<?php echo $userData->picture; ?>" >
+                                            <p style="text-align: left;">Welcome <a href="<?php echo $userData->link; ?>"><?php echo $userData->name; ?></a> !
+                                            </p>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text" name="cname" id="cname" pattern="^[\u4e00-\u9fa5]+$">
+                                                <label class="mdl-textfield__label" for="cname">中文姓名...</label>
+                                                <span class="mdl-textfield__error">請輸入您的中文姓名</span>
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="email" name="email" id="email">
+                                                <label class="mdl-textfield__label" for="email">電子郵件...</label>
+                                                <span class="mdl-textfield__error">Wrong type.</span>
+                                            </div>
+                                        </div>
+                                        <div class="mdl-card__actions mdl-card--border">
+                                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" type="submit">
+                                                <i class="material-icons">save</i> Save Profile
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <?php
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
