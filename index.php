@@ -35,6 +35,20 @@ try {
 
         $date_list = $objUserlog->getDateList($days);
         $model_list = $objUserlog->getUserModelByUID($userID);
+
+        // Default UserHardwareID
+        if (empty($UHID)) {
+            $UHID = $model_list[0]['UHID'];
+        }
+
+        $model_name = '';
+        $android_version = '';
+        foreach ($model_list as $model) {
+            if ($model['UHID'] == $UHID) {
+                $model_name = $model['Model'];
+                $android_version = $model['AndroidVersion'];
+            }
+        }
     } else {
         header('Location: ' . _WEB_ADDR . 'gauth.php');
     }
@@ -88,7 +102,7 @@ and open the template in the editor.
                         echo '<a class="mdl-navigation__link" href="?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> ' . $model['Model'] . '<br>' . str_replace('Android ', '', $model['AndroidVersion']) . '</a>';
                     }
                     ?>
-                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Install</a>
                     <a class="mdl-navigation__link" href="gauth.php?logout">Logout</a>
                 </nav>
             </div>
@@ -104,13 +118,14 @@ and open the template in the editor.
                             <div class="mdl-card__title">
                                 <h2 class="mdl-card__title-text"><?php echo $assign_date; ?></h2>
                             </div>
+                            <div class="mdl-card__supporting-text">
+                                <?php echo '<strong>Model</strong>: ' . $model_name . ' (' . $android_version . ')'; ?>
+                            </div>
                             <table class="mdl-data-table mdl-js-data-table mdl-color-text--grey-600 xmind-full-width">
                                 <thead>
                                     <tr>
                                         <th>#</th>
                                         <th>Log ID</th>
-                                        <th class="mdl-data-table__cell--non-numeric">Model</th>
-                                        <th class="mdl-data-table__cell--non-numeric">Android</th>
                                         <th class="mdl-data-table__cell--non-numeric">Upload Time</th>
                                         <th>Receive</th>
                                     </tr>
@@ -121,9 +136,7 @@ and open the template in the editor.
                                         echo '<tr>';
                                         echo '<td>' . $i . '</td>';
                                         echo '<td>' . $row['logID'] . '</td>';
-                                        echo '<td class="mdl-data-table__cell--non-numeric">' . $row['Model'] . '</td>';
-                                        echo '<td class="mdl-data-table__cell--non-numeric">' . $row['AndroidVersion'] . '</td>';
-                                        echo '<td class="mdl-data-table__cell--non-numeric">' . $row['uploadTime'] . '</td>';
+                                        echo '<td class="mdl-data-table__cell--non-numeric">' . $row['saveTime'] . '</td>';
                                         echo '<td>' . $row['receiveCount'] . '</td>';
                                         echo '</tr>';
                                         $i++;

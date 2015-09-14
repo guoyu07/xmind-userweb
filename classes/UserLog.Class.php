@@ -36,9 +36,8 @@ class UserLog
     public function getUserLogByDate($userID, $UHID, $assign_date)
     {
         $rtn = array();
-        $sql = 'SELECT `logID`, `Model`, `uploadTime`, `AndroidVersion`, `receiveCount` FROM `upload_log` '
-                . 'INNER JOIN `user_hardware` ON `user_hardware`.`UHID` = `upload_log`.`UHID` '
-                . 'WHERE `upload_log`.`userID` = :uid AND `upload_log`.`UHID` = :uhid AND `uploadTime` > :begintime AND `uploadTime` < :endtime';
+        $sql = 'SELECT `logID`, `saveTime`,  `receiveCount` FROM `upload_log` '
+                . 'WHERE `userID` = :uid AND `UHID` = :uhid AND `uploadTime` > :begintime AND `uploadTime` < :endtime';
         $begin_time = $assign_date . ' 00:00:00';
         $end_time = $assign_date . ' 23:59:59';
         try {
