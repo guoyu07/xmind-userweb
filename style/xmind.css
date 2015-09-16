@@ -116,8 +116,9 @@ and open the template in the editor.
     background-color: #03c0c6;
 }
 
-.user-install .mobile-main_icon {
-    margin: 0 auto;
+.user-install .mobile-main_icon,
+.user-install-step .mobile-main_icon {
+    margin: 5px auto;
 }
 
 .user-install .mobile_title {
@@ -127,4 +128,26 @@ and open the template in the editor.
 
 .material-icons.md-168 { 
     font-size: 168px; 
+}
+
+.user-install-title > .mdl-card__title {
+    color: #fff;
+    height: 150px;
+    background: url('../imgs/light.jpg') center / cover;
+}
+
+.user-install-step > .mdl-card__title {
+    color: #fff;
+    height: 410px;
+    background-color: #e5e5e5;
+}
+
+.user-install-step .step-img {
+    max-height: 400px;
+    margin: 5px;
+}
+
+.user-install-step .install_subject {
+    font-weight: 600;
+    color: #03c0c6;
 }

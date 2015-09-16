@@ -94,22 +94,117 @@ and open the template in the editor.
             </div>
             <main class="mdl-layout__content">
                 <div class="xmind-content__posts mdl-grid">
-                    <div class="mdl-card user-install mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                    <div class="mdl-card user-install-title mdl-cell mdl-cell--12-col mdl-shadow--2dp">
                         <div class="mdl-card__title">
-                            <div class="mobile-main_icon"><i class="material-icons md-168">smartphone</i>
-                                <h4 class="mobile_title">Nexus</h4>
+                            <h2 class="mdl-card__title-text">開啟安裝外部APK</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            安裝前準備工作
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_InstallSetting_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Android Version：5.1.1
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                安裝說明
-                            </a>
+                            <p class="install_subject">開啟安裝外部APK</p>
+                            1. 開啟設定中的 個人 / 安全性。
                         </div>
                     </div>
-                    
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_InstallSetting_02.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啟安裝外部APK</p>
+                            2. 點擊開啟「允許安裝 Play 商店以外的來源提供的應用程式」。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_InstallSetting_03.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啟安裝外部APK</p>
+                            3. 開啓設定之後，會彈出提示內容。<br>
+                            4. 選擇「確定」完成安裝外部APK的設定。
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-title mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">下載與安裝 XMind 應用程式</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            下載、安裝、執行
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">下載與安裝 XMind 應用程式</p>
+                            1. 掃描上面的 QR Code 或直接點擊下面的網址下載。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_Install_01.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">下載與安裝 XMind 應用程式</p>
+                            2.  下載完成後開始進行安裝，出現授權頁面，點擊「下一步」繼續進行安裝。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_Install_02.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">下載與安裝 XMind 應用程式</p>
+                            3. 點擊「安裝」繼續進行安裝。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_Install_04.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">下載與安裝 XMind 應用程式</p>
+                            4. 安裝完成，點擊「完成」確認完成安裝。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img" src="imgs/Nexus_Install_05.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">下載與安裝 XMind 應用程式</p>
+                            5. 回到目錄中，找到「XMind」的圖示，點擊啟動程式。
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
