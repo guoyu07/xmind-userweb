@@ -33,22 +33,7 @@ try {
         $userID = $objUserAuth->getUserID($userData);
         $objUserlog = new \ninthday\XMind\UserLog($pdoConn);
 
-        $date_list = $objUserlog->getDateList($days);
         $model_list = $objUserlog->getUserModelByUID($userID);
-
-        // Default UserHardwareID
-        if (empty($UHID)) {
-            $UHID = $model_list[0]['UHID'];
-        }
-
-        $model_name = '';
-        $android_version = '';
-        foreach ($model_list as $model) {
-            if ($model['UHID'] == $UHID) {
-                $model_name = $model['Model'];
-                $android_version = $model['AndroidVersion'];
-            }
-        }
     } else {
         header('Location: ' . _WEB_ADDR . 'gauth.php');
     }
@@ -78,7 +63,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+// put your code here
         ?>
         <!-- Accent-colored raised button with ripple -->
         <div class="xmind-layout-transparent mdl-layout mdl-js-layout">
@@ -100,61 +85,31 @@ and open the template in the editor.
                 <nav class="mdl-navigation">
                     <?php
                     foreach ($model_list as $model) {
-                        echo '<a class="mdl-navigation__link" href="?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> ' . $model['Model'] . '<br>' . str_replace('Android ', '', $model['AndroidVersion']) . '</a>';
+                        echo '<a class="mdl-navigation__link" href="index.php?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> ' . $model['Model'] . '<br>' . str_replace('Android ', '', $model['AndroidVersion']) . '</a>';
                     }
                     ?>
-                    <a class="mdl-navigation__link" href="ins_intro.php">Install</a>
+                    <a class="mdl-navigation__link" href="#">Install</a>
                     <a class="mdl-navigation__link" href="gauth.php?logout">Logout</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
                 <div class="xmind-content__posts mdl-grid">
-                    <?php
-                    foreach ($date_list as $assign_date) {
-                        $i = 1;
-                        $receive = 0;
-                        $day_userlog = $objUserlog->getUserLogByDate($userID, $UHID, $assign_date);
-                        ?>
-                        <div class="mdl-card user-upload-log mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-                            <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text"><?php echo $assign_date; ?></h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <?php echo '<strong>Model</strong>: ' . $model_name . ' (' . $android_version . ')'; ?>
-                            </div>
-                            <table class="mdl-data-table mdl-js-data-table mdl-color-text--grey-600 xmind-full-width">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Log ID</th>
-                                        <th class="mdl-data-table__cell--non-numeric">Upload Time</th>
-                                        <th>Receive</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    foreach ($day_userlog as $row) {
-                                        echo '<tr>';
-                                        echo '<td>' . $i . '</td>';
-                                        echo '<td>' . $row['logID'] . '</td>';
-                                        echo '<td class="mdl-data-table__cell--non-numeric">' . $row['saveTime'] . '</td>';
-                                        echo '<td>' . $row['receiveCount'] . '</td>';
-                                        echo '</tr>';
-                                        $i++;
-                                        $receive += $row['receiveCount'];
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    <?php echo 'Total times: ' . strval($i - 1) . ' , Receive probes: ' . number_format($receive); ?>
-                                </a>
+                    <div class="mdl-card user-install mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon"><i class="material-icons md-168">smartphone</i>
+                                <h4 class="mobile_title">Nexus</h4>
                             </div>
                         </div>
-                        <?php
-                    }
-                    ?>
+                        <div class="mdl-card__supporting-text">
+                            Android Version：5.1.1
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                安裝說明
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </main>
         </div>

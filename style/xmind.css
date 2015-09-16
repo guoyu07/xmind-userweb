@@ -83,23 +83,23 @@ and open the template in the editor.
 }
 
 .xmind-content__posts {
-  max-width: 900px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+    max-width: 900px;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
 
 .user-upload-log > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../imgs/blackboard.jpg') center / cover;
+    color: #fff;
+    height: 150px;
+    background: url('../imgs/blackboard.jpg') center / cover;
 }
 
 .xmind-full-width {
@@ -108,4 +108,23 @@ and open the template in the editor.
 
 .mdl-layout__header-row .mdl-navigation__link {
     color: white;
+}
+
+.user-install > .mdl-card__title {
+    color: #fff;
+    height: 250px;
+    background-color: #03c0c6;
+}
+
+.user-install .mobile-main_icon {
+    margin: 0 auto;
+}
+
+.user-install .mobile_title {
+    text-align: center;
+    margin: 0;
+}
+
+.material-icons.md-168 { 
+    font-size: 168px; 
 }
