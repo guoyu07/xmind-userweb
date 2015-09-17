@@ -145,6 +145,7 @@ and open the template in the editor.
 .user-install-step .step-img {
     max-height: 400px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .user-install-step .install_subject {

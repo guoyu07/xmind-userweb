@@ -60,6 +60,7 @@ and open the template in the editor.
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="style/xmind.css">
+        <link rel="stylesheet" type="text/css" href="resources/featherlight/featherlight.min.css">
     </head>
     <body>
         <?php
@@ -88,7 +89,7 @@ and open the template in the editor.
                         echo '<a class="mdl-navigation__link" href="index.php?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> ' . $model['Model'] . '<br>' . str_replace('Android ', '', $model['AndroidVersion']) . '</a>';
                     }
                     ?>
-                    <a class="mdl-navigation__link" href="#">Install</a>
+                    <a class="mdl-navigation__link" href="ins_intro.php">Install</a>
                     <a class="mdl-navigation__link" href="gauth.php?logout">Logout</a>
                 </nav>
             </div>
@@ -107,7 +108,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_InstallSetting_01.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_01.png" data-featherlight="imgs/Nexus_InstallSetting_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -118,7 +119,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_InstallSetting_02.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_02.png" data-featherlight="imgs/Nexus_InstallSetting_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -129,7 +130,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_InstallSetting_03.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_03.png" data-featherlight="imgs/Nexus_InstallSetting_03.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -153,7 +154,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/">
+                                <img class="step-img image-lightbox" src="imgs/" data-featherlight="">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -164,7 +165,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_Install_01.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_01.png" data-featherlight="imgs/Nexus_Install_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -175,7 +176,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_Install_02.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_02.png" data-featherlight="imgs/Nexus_Install_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -186,7 +187,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_Install_04.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_04.png" data-featherlight="imgs/Nexus_Install_04.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -197,7 +198,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img" src="imgs/Nexus_Install_05.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_05.png" data-featherlight="imgs/Nexus_Install_05.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -208,6 +209,13 @@ and open the template in the editor.
                 </div>
             </main>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="resources/featherlight/featherlight.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.image-lightbox').featherlight({type: 'image'});
+            });
+        </script>
     </body>
 </html>
 <?php
