@@ -207,6 +207,107 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-title mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">開啓協助工具服務設定</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            依照不同廠牌行動電話可能有不同的名稱
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_01.png" data-featherlight="imgs/Nexus_ServiceSetting_01.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓協助工具服務設定</p>
+                            1. 開啟設定中， 系統 / 無障礙設定。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_01.png" data-featherlight="imgs/Nexus_ServiceSetting_01.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓協助工具服務設定</p>
+                            2. 在 無障礙設定 / 服務 / XMind 應為「關閉」狀態，請點擊該項目。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_03.png" data-featherlight="imgs/Nexus_ServiceSetting_03.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓協助工具服務設定</p>
+                            3. 點擊紅框中的開關（如圖），將 XMind 改為開啟狀態。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_04.png" data-featherlight="imgs/Nexus_ServiceSetting_04.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓協助工具服務設定</p>
+                            4. 開啓時彈出確認視窗，請選擇「確定」。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_05.png" data-featherlight="imgs/Nexus_ServiceSetting_05.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓協助工具服務設定</p>
+                            5. 確認 無障礙設定 / 服務 / XMind 已經為開啟狀態。
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-title mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">開啓定位設定</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            開啓使用者的定位設定
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_01.png" data-featherlight="imgs/Nexus_LocationSetting_01.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓定位設定</p>
+                            1. 開啟設定中， 個人 / 定位設定。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_02.png" data-featherlight="imgs/Nexus_LocationSetting_02.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓定位設定</p>
+                            2. 若定位為「關閉」狀態，點擊右上角紅框中的開關將定位開啟，圖為已經開啟定位設定。
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
