@@ -154,12 +154,13 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/" data-featherlight="">
+                                <img class="step-img image-lightbox" src="imgs/xmind-QRCode.png" data-featherlight="imgs/xmind-QRCode.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">下載與安裝 XMind 應用程式</p>
-                            1. 掃描上面的 QR Code 或直接點擊下面的網址下載。
+                            1. 掃描上面的 QR Code 或直接點擊下面的網址下載。<br>
+                            <a href="http://goo.gl/nVaeuZ">http://goo.gl/nVaeuZ</a>
                         </div>
                     </div>
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
@@ -232,7 +233,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_01.png" data-featherlight="imgs/Nexus_ServiceSetting_01.png">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_02.png" data-featherlight="imgs/Nexus_ServiceSetting_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
