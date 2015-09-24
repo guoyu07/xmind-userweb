@@ -281,7 +281,7 @@ and open the template in the editor.
                             <h2 class="mdl-card__title-text">開啓定位設定</h2>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            開啓使用者的定位設定
+                            開啓使用者的位置的設定
                         </div>
                     </div>
                 </div>
@@ -306,6 +306,19 @@ and open the template in the editor.
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啓定位設定</p>
                             2. 若定位為「關閉」狀態，點擊右上角紅框中的開關將定位開啟，圖為已經開啟定位設定。
+                        </div>
+                    </div>
+                </div>
+                <div class="xmind-content__posts mdl-grid">
+                    <div class="mdl-card user-install-finish mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">完成安裝與設定</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            您已經完成所有的安裝與設定，非常謝謝您的參與！
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="saveInstalled.php">
+                                完成安裝 | 瀏覽上傳
+                            </a>
                         </div>
                     </div>
                 </div>

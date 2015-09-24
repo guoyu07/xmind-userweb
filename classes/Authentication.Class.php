@@ -38,6 +38,18 @@ class Authentication
             return false;
         }
     }
+    
+    public function isInstalled($userData){
+        $sql = "SELECT `installGuide` FROM `info_user` WHERE `gid` = :gid";
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindParam(':gid', $userData->id, \PDO::PARAM_STR);
+        if ($stmt->execute() && $stmt->rowCount() > 0) {
+            $rs = $stmt->fetch(\PDO::FETCH_ASSOC);
+            return $rs['installGuide'] != 0;
+        } else {
+            return false;
+        }
+    }
 
     /**
      * 確認使用者的姓名和聯絡 Email 是不是已經有完整
@@ -123,6 +135,18 @@ class Authentication
         }
     }
 
+    public function markDoneInstalled($userData)
+    {
+        $sql = "UPDATE `info_user` SET `installGuide`= 1 WHERE `gid`=:gid";
+        try {
+            $stmt = $this->dbh->prepare($sql);
+            $stmt->bindParam(':gid', $userData->id, \PDO::PARAM_STR);
+            $stmt->execute();
+        } catch (\PDOException $exc) {
+            throw new \Exception($exc->getMessage());
+        }
+    }
+    
     public function __destruct()
     {
         $this->dbh = null;

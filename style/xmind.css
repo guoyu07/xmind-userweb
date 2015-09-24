@@ -152,3 +152,9 @@ and open the template in the editor.
     font-weight: 600;
     color: #03c0c6;
 }
+
+.user-install-finish > .mdl-card__title {
+    color: #fff;
+    height: 150px;
+    background-color: #03c0c6;
+}

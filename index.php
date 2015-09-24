@@ -29,6 +29,10 @@ try {
         if (!$objUserAuth->isExistandActived($userData)) {
             header('Location: ' . _WEB_ADDR . 'gauth.php');
         }
+        
+        if (!$objUserAuth->isInstalled($userData)) {
+            header('Location: ' . _WEB_ADDR . 'ins_intro.php');
+        }
 
         $userID = $objUserAuth->getUserID($userData);
         $objUserlog = new \ninthday\XMind\UserLog($pdoConn);
