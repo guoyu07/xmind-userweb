@@ -108,7 +108,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_01.png" data-featherlight="imgs/Nexus_InstallSetting_01.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_InstallSetting_01.png" data-featherlight="imgs/hTC_InstallSetting_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -119,18 +119,18 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_02.png" data-featherlight="imgs/Nexus_InstallSetting_02.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_InstallSetting_02.png" data-featherlight="imgs/hTC_InstallSetting_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啟安裝外部APK</p>
-                            2. 點擊開啟「允許安裝 Play 商店以外的來源提供的應用程式」。
+                            2. 點擊開啟「未知的來源」（允許安裝 Play 商店以外的來源提供的應用程式）。
                         </div>
                     </div>
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_InstallSetting_03.png" data-featherlight="imgs/Nexus_InstallSetting_03.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_InstallSetting_03.png" data-featherlight="imgs/hTC_InstallSetting_03.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -166,7 +166,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_01.png" data-featherlight="imgs/Nexus_Install_01.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_Install_01.png" data-featherlight="imgs/hTC_Install_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -177,7 +177,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_02.png" data-featherlight="imgs/Nexus_Install_02.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_Install_02.png" data-featherlight="imgs/hTC_Install_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -188,7 +188,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_04.png" data-featherlight="imgs/Nexus_Install_04.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_Install_03.png" data-featherlight="imgs/hTC_Install_03.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -199,7 +199,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_Install_05.png" data-featherlight="imgs/Nexus_Install_05.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_Install_04.png" data-featherlight="imgs/hTC_Install_04.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -222,29 +222,29 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_01.png" data-featherlight="imgs/Nexus_ServiceSetting_01.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_ServiceSetting_01.png" data-featherlight="imgs/hTC_ServiceSetting_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啓協助工具服務設定</p>
-                            1. 開啟設定中， 系統 / 無障礙設定。
+                            1. 開啟設定中， 系統 / 協助工具。
                         </div>
                     </div>
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_02.png" data-featherlight="imgs/Nexus_ServiceSetting_02.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_ServiceSetting_02.png" data-featherlight="imgs/hTC_ServiceSetting_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啓協助工具服務設定</p>
-                            2. 在 無障礙設定 / 服務 / XMind 原本為「關閉」狀態，請點擊該項目。
+                            2. 在 協助工具 / 服務 / XMind 原本為「關」狀態，請點擊該項目。
                         </div>
                     </div>
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_03.png" data-featherlight="imgs/Nexus_ServiceSetting_03.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_ServiceSetting_03.png" data-featherlight="imgs/hTC_ServiceSetting_03.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -255,7 +255,7 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_04.png" data-featherlight="imgs/Nexus_ServiceSetting_04.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_ServiceSetting_04.png" data-featherlight="imgs/hTC_ServiceSetting_04.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
@@ -266,12 +266,12 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_ServiceSetting_05.png" data-featherlight="imgs/Nexus_ServiceSetting_05.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_ServiceSetting_05.png" data-featherlight="imgs/hTC_ServiceSetting_05.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啓協助工具服務設定</p>
-                            5. 確認 無障礙設定 / 服務 / XMind 已經為「開啟」狀態。
+                            5. 確認 無障礙設定 / 服務 / XMind 已經為「開」狀態。
                         </div>
                     </div>
                 </div>
@@ -289,18 +289,18 @@ and open the template in the editor.
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_01.png" data-featherlight="imgs/Nexus_LocationSetting_01.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_LocationSetting_01.png" data-featherlight="imgs/hTC_LocationSetting_01.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <p class="install_subject">開啓定位設定</p>
-                            1. 開啟設定中， 個人 / 定位 設定。
+                            1. 開啟設定中， 個人 / 位置 設定。
                         </div>
                     </div>
                     <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
                         <div class="mdl-card__title">
                             <div class="mobile-main_icon">
-                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_02.png" data-featherlight="imgs/Nexus_LocationSetting_02.png">
+                                <img class="step-img image-lightbox" src="imgs/hTC_LocationSetting_02.png" data-featherlight="imgs/hTC_LocationSetting_02.png">
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
