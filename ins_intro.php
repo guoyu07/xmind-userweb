@@ -116,7 +116,7 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Android Version：
+                            Android Version：5.1.1
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
                             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"  href="ins_sony.php">
@@ -146,10 +146,10 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Android Version：
+                            Android Version：5.1.1
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="ins_samsung.php">
                                 安裝說明
                             </a>
                         </div>
@@ -161,7 +161,7 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            Android Version：
+                            Android Version：5.1.1
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
                             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="ins_lg.php">
