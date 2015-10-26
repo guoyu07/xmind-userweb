@@ -308,6 +308,39 @@ and open the template in the editor.
                             2. 若定位為「關閉」狀態，點擊右上角紅框中的開關將定位開啟，圖為已經開啟定位設定。
                         </div>
                     </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_03.png" data-featherlight="imgs/Nexus_LocationSetting_03.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓定位設定</p>
+                            3. 若「模式」不為「高精確度」，請點選模式（紅框）進入設定。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_04.png" data-featherlight="imgs/Nexus_LocationSetting_04.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓定位設定</p>
+                            4. 選擇「高精確度」。
+                        </div>
+                    </div>
+                    <div class="mdl-card user-install-step mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mobile-main_icon">
+                                <img class="step-img image-lightbox" src="imgs/Nexus_LocationSetting_05.png" data-featherlight="imgs/Nexus_LocationSetting_05.png">
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p class="install_subject">開啓定位設定</p>
+                            5. 在對話視窗點選「同意」，完成設定。
+                        </div>
+                    </div>
                 </div>
                 <div class="xmind-content__posts mdl-grid">
                     <div class="mdl-card user-install-finish mdl-cell mdl-cell--12-col mdl-shadow--2dp">
