@@ -104,7 +104,9 @@ and open the template in the editor.
                 <nav class="mdl-navigation">
                     <?php
                     foreach ($model_list as $model) {
-                        echo '<a class="mdl-navigation__link" href="?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> ' . $model['Model'] . '<br>' . str_replace('Android ', '', $model['AndroidVersion']) . '</a>';
+                        echo '<a class="mdl-navigation__link model-list" href="?uh=' . $model['UHID'] . '"><i class="material-icons">smartphone</i> '
+                                . $model['Model'] . '<br>' . str_replace(' SDK', '', $model['AndroidVersion']) 
+                                . '<br>App: v.' . $model['AppVersion'] . '</a>';
                     }
                     ?>
                     <a class="mdl-navigation__link" href="ins_intro.php">Install</a>
@@ -124,7 +126,7 @@ and open the template in the editor.
                                 <h2 class="mdl-card__title-text"><?php echo $assign_date; ?></h2>
                             </div>
                             <div class="mdl-card__supporting-text">
-                                <?php echo '<strong>Model</strong>: ' . $model_name . ' (' . $android_version . ')'; ?>
+                                <?php echo '<strong>Model</strong>: ' . $model_name . ' [ ' . $android_version . ' ]'; ?>
                             </div>
                             <table class="mdl-data-table mdl-js-data-table mdl-color-text--grey-600 xmind-full-width">
                                 <thead>

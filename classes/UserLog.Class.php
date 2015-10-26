@@ -60,7 +60,8 @@ class UserLog
     public function getUserModelByUID($userID)
     {
         $rtn = array();
-        $sql = 'SELECT `UHID`, `Model`, `AndroidVersion` FROM `user_hardware` WHERE `userID`= :uid ORDER BY `UHID` DESC';
+        $sql = 'SELECT `UHID`, `Model`, `AndroidVersion`, `AppVersion` '
+                . 'FROM `user_hardware` WHERE `userID`= :uid ORDER BY `UHID` DESC';
         try {
             $stmt = $this->dbh->prepare($sql);
             $stmt->bindParam(':uid', $userID, \PDO::PARAM_INT);
